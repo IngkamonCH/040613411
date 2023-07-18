@@ -1,0 +1,119 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#myheader {
+    color: rgb(255, 255, 255);
+    background-color: #383535;
+    font-family: 'Prompt', sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    padding: 20px;
+    position: relative;
+}
+
+.header2 {
+    background-color: rgb(2, 114, 58);
+    position: absolute;
+    text-align: center;
+    padding-right: 100px;
+}
+
+.container1 {
+    display: flexbox;
+}
+
+.container2 {
+    display: flexbox;
+    position: relative;
+}
+
+.number {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.herblist {
+    display: inline-block;
+    padding: 0px;
+    box-shadow: 2px 2px 4px #b6acac;
+    margin: 20px;
+}
+
+.herbtype {
+    display: inline-block;
+    padding: 0px;
+    margin: 20px;
+}
+
+.type{
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+.herbtitle {
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.column {
+    display: flexbox;
+}
+
+.article1 {
+    font-family: 'Prompt', sans-serif;
+    background-color: rgb(2, 114, 58);
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+
+}
+
+.article2 {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Prompt', sans-serif;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    width: auto;
+    height: 1000px;
+    box-shadow: 2px 2px 4px #b6acac;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 20px;
+    display: inline-table;
+    float: right;
+}
+
+.article3 {
+    font-family: 'Prompt', sans-serif;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    border: 6px solid rgb(2, 114, 58);
+    padding: 30px;
+
+    text-align: center;
+}
+
+img {
+    box-shadow: 2px 2px 4px #383535;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+}
+
+.ref {
+    font-family: 'Prompt', sans-serif;
+    padding: 10px;
+}
