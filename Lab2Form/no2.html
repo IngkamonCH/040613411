@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab2 no.2</title>
+</head>
+
+<body>
+    <fieldset>
+        <form action="form-echo.php" method="post">
+            <h3>แบบฟอร์มจองทัวร์</h3>
+            <fieldset>
+                <legend>ข้อมูลทั่วไป</legend>
+                <label>ชื่อ-สกุล: </label>
+                <br>
+                <input type="text" name="name" placeholder="กรอกชื่อ-สกุล" required />
+                <br>
+                <label>Email: </label>
+                <br>
+                <input type="email" name="email" required />
+                <br>
+                <label>โทรศัพท์: </label>
+                <br>
+                <input type="tel" name="phone" required value="+66" pattern="[0-9]{10}" />
+                <br>
+                <label>ที่อยู่: </label>
+                <br>
+                <textarea name="address" cols="30" rows="3"></textarea>
+                <br>
+                <label>รหัสไปรษณีย์: </label>
+                <input type="text" name="zipcode" size="5" pattern="[0-9]{5}" />
+                <br>
+                <label>ผู้จอง: </label>
+                <input type="file" name="file">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>ข้อมูลเข้าสู่ระบบ</legend>
+                <label>Username: </label>
+                <br>
+                <input type="text" name="username" pattern="([0-9]|[a-z]|_).{8,}" />
+                <br>
+                <label style="font-style: italic;">ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</label>
+                <br>
+                <label>Password: </label>
+                <br>
+                <input type="password" name="password" pattern=".{8,}" />
+                <br>
+                <label style="font-style: italic;">ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+                <label>แพคเก็จทัวร์: </label>
+                <select name="package">
+                    <option value="">--select--</option>
+                    <option value="TH">Thailand</option>
+                    <option value="JP">Japan</option>
+                    <option value="TW">Taiwan</option>
+                </select>
+                <br>
+                <label>วันที่เดินทาง: </label>
+                <input type="date" name="date">
+                <br>
+                <label>จำนวนผู้เดินทาง: </label>
+                <input type="number" name="passenger" min="1" max="10">
+                <br>
+                <label>เน้นการท่องเที่ยวแบบใด?
+                    <br>
+                    <input type="checkbox" name="lifestyle" value="ชอปปิ้ง">ชอปปิ้ง
+                    <br>
+                    <input type="checkbox" name="lifestyle" value="ธรรมชาติ">ธรรมชาติ
+                    <br>
+                    <input type="checkbox" name="lifestyle" value="ทะเล">ทะเล
+                </label>
+            </fieldset>
+            <br>
+            <label>ยอมรับเงื่อนไขและข้อตกลง
+                <input type="radio" name="policy" value="I agree" checked>I agree
+                <input type="radio" name="policy" value="I disagree">I disagree
+            </label>
+            <input type="submit" name="reserve" value="จอง">
+        </form>
+    </fieldset>
+
+</body>
+
+</html>

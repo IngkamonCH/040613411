@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lab2 no.1</title>
+</head>
+
+<body>
+    <h1>Lab2 no.1</h1>
+    <form action="form-echo.php" method="post">
+        1. ชื่อเต็ม/ย่อของสาขาวิชา: <input type="text" name="branchName"><br>
+
+        2. จำนวนเงินที่จะโอน: <input type="number" name="transferAmount"><br>
+
+        3. อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย:<br>
+        <input type="checkbox" name="favFood" value="pizza"> pizza<br>
+        <input type="checkbox" name="favFood" value="padthai"> padthai<br>
+        <input type="checkbox" name="favFood" value="pasta"> pasta<br>
+        <input type="checkbox" name="favFood" value="sushi"> sushi<br>
+        <input type="checkbox" name="favFood" value="kimchi"> kimchi<br>
+
+        4. ค่าไฟฟ้า 3 เดือนที่ผ่านมา: <input type="number" name="electricityBill"><br>
+
+        5. รหัสบัตรประชาชน: <input type="text" name="IDcard"><br>
+
+        6. ความพึงพอใจของหนังสือเล่มนี้:<br>
+        <input type="radio" name="satisfaction" value="very_satisfied"> พอใจมาก<br>
+        <input type="radio" name="satisfaction" value="satisfied"> พอใจ<br>
+        <input type="radio" name="satisfaction" value="neutral"> ปานกลาง<br>
+        <input type="radio" name="satisfaction" value="dissatisfied"> ไม่พอใจ<br>
+        <input type="radio" name="satisfaction" value="very_dissatisfied"> ไม่พอใจมาก<br>
+
+        7. อาการป่วย: <br>
+        <textarea name="symptoms" rows="4" cols="50"></textarea><br>
+
+        8. ในช่วง 3 เดือนที่ผ่านมาเคยได้รับวัคซีนหรือไม่:<br>
+        <input type="radio" name="vaccination" value="yes"> เคยได้รับ<br>
+        <input type="radio" name="vaccination" value="no"> ไม่เคยได้รับ<br>
+
+        9. รหัสผ่าน: <input type="password" name="password"><br>
+
+        10. เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน<br>
+        เวลาเริ่มเข้าเรียน: <input type="time" name="start_time"><br>
+        เวลาสิ้นสุดการเรียน: <input type="time" name="end_time"><br>
+
+        11. วันเวลาที่ต้องไปพบแพทย์: <input type="datetime-local" name="doctor_appointment"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
