@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        background-color: black;
+        color: white;
+        width: auto;
+        text-align: center;
+    }
+
+    section {
+        background-color: gainsboro;
+        width: auto;
+        margin: 0;
+    }
+
+    footer {
+        background-color: cornflowerblue;
+        width: auto;
+    }
+
+    @media (min-width:600px) {
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        nav {
+            width: 30%;
+        }
+
+        section {
+            width: 60%;
+        }
+
+        footer {
+            width: 10%;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav>
+            Menu1
+            <br>Menu2
+            <br>Menu3
+        </nav>
+        <section>
+            <p>In publishing, art, and communication, … as speech, writing or any of various arts".</p>
+        </section>
+        <footer>
+            advertising<br>advertising<br>advertising<br>
+        </footer>
+    </div>
+
+
+</body>
+
+</html>
